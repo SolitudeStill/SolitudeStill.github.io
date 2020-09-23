@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Generator 的一些后续</title>
+</head>
+<body>
+    <h1 id="page-generator">Page Generator 的一些后续</h1>
+<h2 id="section">文件头</h2>
+<div class="lang-c editor-colors"><div style="color:Black;background-color:White;"><pre>
+---
+<span style="color:Green;">// balabala</span>
+---
+</pre></div>
+</div>
+<p>原来这东西叫 FrontMatter ，于是顺理成章的了解到了YAML，果然搜不到是因为对此相关几乎没有了解，毕竟这不是md的语法（完全没有关系），也就不可能在语法指南里找到相关信息。</p>
+<p>真是亏我在看其他生成器语法时注意到这是个好东西，然后 VSCode 居然还有语法高亮，同时预览又不会显示，Github 的预览又展示了独特的格式，无处不提醒着我这东西的独特之处。我X，绕了这么大弯子。</p>
+<h2 id="section-1">一些便利条件</h2>
+<p>嗐，说来惭愧，开始还想自己写一个分析器处理md语法再加上如上的自定义来着，但是想想一个迭代了这么久的被广泛应用的东西必然不可能被简简单单用三脚猫的功夫就能处理，但是好在是找到了。</p>
+<p><a href="https://zh.wikipedia.org/wiki/Markdown#%E5%AE%9E%E7%8E%B0">一些实现</a></p>
+<p>托前人们的福，不用从零开始（虽然一开始是这么想的来着），那么终于可以开始新建文件夹了。</p>
+<p>//  高能预警<br />
+<a href="https://masuit.com/55">屌爆了的项目</a></p>
+<p>其中包含模版引擎，语法使用<code>{{}}</code>，为方便扩展，可以考虑用 <code>&quot;内容名&quot; -&gt; 处理方法</code> 项进行通用处理。</p>
+<h2 id="section-2">画饼</h2>
+<p>饼还是单独开一章来画了。</p>
+
+</body>
+</html>

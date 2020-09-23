@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饼—— Page Generator</title>
+</head>
+<body>
+    <h1 id="page-generator">饼—— Page Generator</h1>
+<h2 id="cli">CLI</h2>
+<ul>
+<li><code>build</code><br />
+增量生成</li>
+<li><code>rebuild</code><br />
+全量生成</li>
+<li><code>add &lt;page identifier&gt;</code><br />
+添加新页面</li>
+<li><code>init</code><br />
+初始化当前目录</li>
+</ul>
+<h2 id="section">目录结构</h2>
+<pre><code>/.
+
+/doc                    Markdown文档目录
+  - *.md
+  - ...
+
+/template               生成模板目录
+  - /Default
+      - Tindex.html
+      - Tpage.html
+      - Tcategory.html
+
+/.inf                   信息目录
+  - sn                      序列标识
+  - /track                  文件改动追踪
+      - ...
+
+/dest                   生成页面目录
+  - /2020-01                日期
+      - xxx.html                文档页
+      - ...
+
+  - /data
+      - /category               分类数据目录
+          - xxx.dirc
+          - yyy.dirc
+          - ...
+
+      - directory.dirc          目录数据
+      - categories.json         类别数据
+
+  - index.html              主页
+
+
+</code></pre>
+<h3 id="details">Details</h3>
+<p>模板文件使用<code>{{}}</code>进行标识，需要填充的表项：</p>
+<ul>
+<li>文章内容</li>
+<li>时间</li>
+<li>...<em>待扩展</em></li>
+</ul>
+<p>以一使用模板名的空文件标识当前使用的模板</p>
+
+</body>
+</html>
