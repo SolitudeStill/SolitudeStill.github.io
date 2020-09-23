@@ -19,7 +19,7 @@
                 var el = document.createElement('ul');
                 const time = new Date(doc.Date);
                 var categories = doc.Category.map(v=>`<span class="category-item"> ${v} </span>`);
-                el.innerHTML = `<a class="directory-item" href="${time.getFullYear()}-${time.getMonth()+1}/${doc.Title}">${doc.Title}</a>${categories}`
+                el.innerHTML = `<a class="directory-item" href="${time.toISOString().slice(0,7)}/${doc.Title}">${doc.Title}</a>${categories}`
                 document.querySelector('aside').appendChild(el);
             })
         })
